@@ -15,3 +15,16 @@ Section 3:
 5) Mathematical definition of the scattering problem
 
 
+\section*{Questions to answer:}
+\begin{itemize}
+\item Why did you work on this problem?\\
+My interest in this problem spurred from complexity of wave-topography interactions. As wave encounters considerable inhomogeneity in the ocean bottom its behavior rapidly changes with its initial energy being redistributed into other forms of propagation. For example, for many years it was known trapping of wave energy at bottom discontinuity. This is a classical problem leading to an idea that the ocean waves will be redistributing energy in different locations, enlightening some regions of the ocean or creating shadow zones. My thesis considers such two problems. First is about tsunami wave that focus their energy and thus, creating amplified signals at distant locations along coastlines. For the second problem it is taken internal tidal beam that hits continental margin with consequent energy deposition. My primary question was to analyze numerical experiments and describe physical mechanisms behind in order to quantify the scattering problem.\\
+
+\item What did you find out?\\
+Tsunami wave as it encounters submerged mountain will excite spatial modes that has quite tight structure. More appropriatly to call them tsunami beams. They will have frequency dependence, only specific periods and under specific incident angle will generate the tsunami beams. This further led to description of two tsunami events that had distinct signature along the west coast of the US that is supported by sea level gauge observations. It appears that seamounts can focus energy under distinct conditions, which would help in future analysis of tsunami events.\\
+On the other hand, internal tides in Tasman Sea show variability and hence, their scattering on the continental slope will have time variable character. But this turns out to be dependent not only local conditions around Tasmania, but also generation process occurring at Macquarie Ridge. Putting everything together has shown that the energy deposition will vary. This is well known result, but in my work I have investigated and described the processes beneath such that position of large scale circulation can change the incidence of the beam decreasing its dissipation on the slope, but further offshore conditions can additionally refract the beam. When the beam impinges the slope it can additionally excite some transport phenomena - slope mode which shuffles energy around the slope. In overall, my work proposed ideas and methods how such variable behavior can be understood and predicted.
+
+\item How did you tackle it?\\
+These problems were addressed by analysis of energy flux budgets. This quantity is useful in analysis of scattering and reflection problems since energy conservation is one of the fundamental principles. Calculating energy flux and carrying out developed in my thesis method for directional decomposition with additional analysis of conversion rates for internal tides led to understanding how energy is partitioned between different modes of both horizontal and vertical propagation. Than it was developed theoretical framework to generalize the considered here problems and to study parameter space.
+\end{itemize}
+
