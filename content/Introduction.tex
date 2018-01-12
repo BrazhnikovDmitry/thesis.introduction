@@ -32,21 +32,21 @@
 %\newcommand{\ic}{\operatorname{Im}}	% complex real
 \begin{document}
 
-\title{Gravity wave scattering by large scale sea bottom features}
+\title{Energy scattering of tsunami and internal tides upon interaction with bottom relief.}
 \maketitle
 
 \section*{Abstract}
 The surface and interior wave motions interact with the sea bottom irregularities altering gravity wave energy propagation. Directional scattering and mode conversion will inevitably reshape a wave field and will impel restructure of localized energy budgets. Two geophysically important cases are investigated: (1) a tsunami wave scattering from a prominent sea mount and (2) origination of a semidiurnal internal tide and its reflection    from a continental slope.\\
 A tsunami wave is scattered by Koko Guoyt such that amplified and delayed signals were observed during recent tsunami events. The numerical simulations emphasize complicated response. The energy focusing occurs in dependence to tsunami incidence angel and frequencies involved. Koko guoyt as having asymmetrical shape selectively amplifies tsunami waves. The provided theoretical analysis further outlines regions and parameters which would lead to higher amplification.\\
 Wave energy can be transported in the ocean's interior by internal waves. E.g., internal tides originate from surface tide interaction with steep submarine ridges. This phenomena undergoes temporal variation leading to nonstationarity in the far field. It is shown for Tasman Sea that remote internal tide modulates magnitude of energy conversion. Further leading to spatial variability many kilometers away.\\
-The Tasman Sea internal tides impinge on the continental slope partially reflecting. Efficiency of reflection markedly depends on generation of along slope leaky mode. Under conditions coupling with the surface tide occurs leading to overall energy increase that outgoing energy becomes larger than incident amount. This deviates from classical two dimensional view on reflection/scattering process of the internal tides. The presented estimates of energy transfers further emphasize large variability mainly coming from along slope topography inhomogeneity.\\
+The Tasman Sea internal tides impinge on the continental slope partially reflecting. Efficiency of reflection markedly depends on generation of along slope leaky mode. Under some conditions coupling with the surface tide occurs leading to overall energy increase (additional source?) that outgoing energy becomes larger than incident amount. This deviates from classical two dimensional view on reflection/scattering process of the internal tides. The presented estimates of energy transfers further emphasize large variability mainly coming from along slope topography inhomogeneity.\\
 Results for both problems conspicuously show importance of three dimensional topographic structure in order to describe wave energy propagation. This has strong effect on variability in the resulting wave field and wave energy sinks.\\
 \textbf{INTERNAL PART IS HORRIBLE, too much intro}
 
 \newpage
 \section{Introduction}
 Oceanic gravity waves fundamentally contribute to redistribution of mechanical energy in the world ocean. The energy pathways of propagating waves can be altered in a result of interaction with large scale sea bottom features such as submarine seamountains, trenches and continental shelves. These processes appreciably shape wave propagation, and thus, leading to variation in the energy budgets. In this work, by means of numerical simulations  energy scattering of tsunamis and internal waves of tidal frequency (internal tides) is examined for cases of their interaction with ocean's bottom relief.\\
-Tsunami waves are transient waves impulsively forced by submarine earthquakes and landslides. In the former case their origin lies along oceanic subduction zones such as Japan-Kuril trench (Figure 1a). These waves traversing the Pacific Ocean will encounter numerous sea bottom features. Here let's discuss also energy decay of tsunami waves.\\
+Tsunami waves are transient waves impulsively forced by submarine earthquakes and landslides. In the former case their origin lies along oceanic subduction zones such as Japan-Kuril trench (Figure 1a). These waves traversing the Pacific Ocean will encounter numerous sea bottom features. \textit{(Here let's discuss also energy decay of tsunami waves.)}\\
 These open-ocean scatterers will redirect and delay wave energy creating amplified far-field signals. For example, during the Tohoku tsunami event of March, 11th 2011, tidal gauges in Northern and Central California recorded larger waves than anywhere else along the US West Coast. Notably, for some stations the secondary waves were higher than the primary.\\
 Several previous studies have identified that the primary reason for the observed wave distribution is Koko Guoyt. There secondary waves originate as a result of wave scattering. This forms a distinct energy lobe (beam). Its salient feature is a bearing towards the Northern California. Additionally, trapping by Mendocino Escarpment reinforces strong tsunami waves in that region.  As it is seen, generation of the scattered waves have important consequences for forecasting of tsunami wave arrival times and post-event assessment of damage to coastal communities. This work sets its goal to develop a description for scattering mechanism at Koko Guyot.\\
 % In this example, delayed waves correlated to a beam of high energy originating from a distant scatterer in Emperor seamount chain, Koko Guyot (Figure 1a). 
@@ -54,15 +54,18 @@ Several previous studies have identified that the primary reason for the observe
 \includegraphics[scale=0.5]{../figures/map_w_places.pdf}
 \caption{The map of the Pacific Ocean with outlined regions.}
 \end{figure}
-Wave phenomena exists through out all water column so that ocean's interior is filled with internal waves. Their existence owns to vertical stratification since the internal waves  travel as an oscillatory motion of isopycnal surfaces. The initial perturbation can be forced by many mechanisms: wind forcing, surface buoyancy forcing, ice keels, etc. Here internal waves are caused by a tidal flow making existence of internal tides. These baroclinic waves are of tidal or quasi-tidal frequency which makes them easy to investigate.\\
-The major reason for study of baroclinic tides is their non negligible role in dissipation of barotropic, surface tidal energy. Current estimates suggest that 1/3 of total tidal energy is being converted into internal motions directly in the deep ocean. Further, roughly 1/3 of that energy is lost to turbulent mixing right at generation sites while the rest emitted as freely propagating waves. These waves were observed to cross the ocean basins in form of tight beams (``spider web") without much attenuation. These observations fueled scientific research to simply understand where and how these internal tidal energy is deposited. Since this occurs deep below direct wind influence, the internal tides are thought as one of candidates for providing energy to close upwelling branch of Meridional overturning circulation.\\
-In any case, internal tides propagation characteristic and scattering properties are still poorly understand and quantified. This is a goal for Tasman Tidal Dissipation Experiment (TTIDE). Their phenomena to investigate was a scattering of internal tidal beam that crosses Tasman Sea and impinges on continental slope of Tasmania (Figure 1). The primary problem is quantifying how much energy is being reflected into the open ocean. This problem was studied by means of numerous numerical experiments. One of the major concerns presented here is a variability associated with incidence of the tidal beam, intrinsic interactions with topography and background conditions. The description of this mechanisms are useful for description of field observations and consequently creating large scale understanding of internal tide reflection which allows for more describing effects of internal tides on the World Ocean.\\
-Both of the investigated geophysical problem represent a type of wave scattering by inhomogeneity in the media. The latter here means rapid change in ocean depth that creating conditions for wave's propagation and energetic characteristics change. As title of thesis implies the problems are dealt by application of energy considerations, mainly energy flux.\\
-At such location the energy would drain into perturbations of isopycnals that further can travel hundreds of  leagues without any significant loss of energy. In the second part of my thesis origination, propagation and dissipation of the internal tidal beam is investigated on the example of Tasman Sea. \\
+Wave phenomena exists through out all water column so that ocean's interior is filled with internal waves. Their existence owns to vertical stratification since the internal waves  expressed as an oscillatory motion of isopycnal surfaces. The initial perturbation can be forced by many mechanisms: wind forcing, surface buoyancy forcing, ice keels, etc. Here internal waves are caused by a tidal flow making existence of internal tides. These baroclinic waves are of tidal or quasi-tidal frequency which makes them easy to investigate.\\
+The major reason for study of baroclinic tides is their non negligible role in dissipation of barotropic, surface tidal energy. Current estimates suggest that 1/3 of total tidal energy is being converted into internal motions directly in the deep ocean. Further, roughly 1/3 of that energy is lost to turbulent mixing right at generation sites while the rest emitted as freely propagating waves. These waves were observed to cross the ocean basins in form of tight beams (``spider web") without much attenuation. These observations fueled scientific research to merely (simply) understand where and how the baroclinic tidal energy is deposited. Further, since it mainly occurs deep below direct wind influence, the internal tides are thought as one of candidates for providing energy to close upwelling branch of Meridional overturning circulation.\\
+In any case, characteristics of internal-tide generation, propagation and scattering are still poorly constrained. Tasman Tidal Dissipation Experiment (TTIDE) has its goal to provide some description of the phenomena in relatively simple setting of Tasman continental slope. Here an internal tidal beam originates at New Zealand, crosses Tasman Sea and impinges on the slope of Tasmania (Figure 1). The primary aim is to quantify amount of energy being reflected into the open sea. I address this question by studying results of numerous numerical experiments with varying conditions. Hence, inconstancy of the tidal beam characteristics and its intertwine with topography and background conditions could be quantitatively described in order for better explanation of TTIDE field measurements.\textit{ And consequently, creating large scale understanding of internal tide reflection which allows for more describing effects of internal tides on the World Ocean.}\\
+Both of the investigated geophysical problem represent a type of wave scattering by inhomogeneity in propagation media. Here, this means rapid change in ocean depth affecting wave dynamics and leading to energy scattering. Logically, an energetic approach should be taken for proper description of the latter process. The following discussion presents a  necessary dynamical background for energetic framework.\\
+\textit{At such location the energy would drain into perturbations of isopycnals that further can travel hundreds of  leagues without any significant loss of energy. In the second part of my thesis origination, propagation and dissipation of the internal tidal beam is investigated on the example of Tasman Sea.\\
 A global internal tide model, satellite altimetry measurements and in situ observations indicate that a ridge south of New Zealand is a site for the generation of the strong tidal beam that is directed towards the Tasman Shelf break. The low mode internal wave beam undergoes scattering from topography, which transfers energy to shorter length scales. Thus, understanding of local energy processes will lead to a more detailed picture of tidal energy dissipation.\\
 \textbf{PLUGIN: 2 TW, 1 TW, Macquarie Ridge, internal tides produce transport of particulates: sediments and can cause strong currents in deep ocean. Role in tidal dissipation, Internal tides what became apparent recently are important energy transporters.}
+}
+\newpage
 \subsection{Energy conservation and energy flux}
-Even though tsunami being surface waves and internal tides are waves traveling on isopycnal surfaces they posses a similarity which enables similar treatment of their energy properties. For both cases the waves are predominantly long, their typical wavelength is much larger than the ocean's mean depth with periods longer than buoyancy period. Both tsunami and internal tides have scales of 200 km. This provides unified description by means of Laplace tidal equations on f-plane with allowance for density stratification (\cite{kundu2008fluid}, \cite{cushman2011introduction}) (or Shallow Gravity waves) which formulated as follows
+This thesis deals with two types of wave motion: surface and interior. Even though they are different it is possible to formulate a problem of energy scattering in similar fashion. In both cases the waves are predominantly long and hydrostatic, because of their typical wavelengths being larger than the ocean's mean depth. Both tsunami and internal tides have length scales order of 100 km. As well it follows that on time scales of several wave periods nonlinear phenomena can be omitted. Than dynamics of the wave motions in stratified Boussinesq ocean with flat bottom and on a rotating f-plane will take form of (\cite{kundu2008fluid}, \cite{cushman2011introduction}),
+\textit{The set of equations is constructed for linear and hydrostatic flow under Boussinesq approximation. }
 \begin{align}
 \pder[u]{t} - f v = -\frac{1}{\ib{\rho}_0}\pder[p]{x}\\
 \pder[v]{t} + f u = -\frac{1}{\ib{\rho}_0}\pder[p]{y}\\
@@ -70,12 +73,12 @@ Even though tsunami being surface waves and internal tides are waves traveling o
 N^2 w = -\frac{1}{\ib{\rho}_0} \pderr[p]{z}{t}\\
 \pder[u]{x} + \pder[v]{y} + \pder[w]{z} = 0
 \end{align}
-with $(u,~v,~w)$ being velocity along zonal, meridional and vertical axis, $f$ - Coriolis parameter, $p$ - perturbation pressure rising from sea level or isopycnal motions of stratified water column given by Brunt-Vaisala frequency $N^2 = -\frac{g}{\ib{\rho}_0}\pder[\rho_0]{z}$. The set of equations is constructed for linear and hydrostatic flow under Boussinesq approximation. Additionally, boundary conditions are imposed on the surface (linearized) and flat bottom,
+with $(u,~v,~w)$ being velocity along zonal, meridional and vertical axis, $f$ - constant Coriolis parameter, $p$ - perturbation pressure (departure) arising either from sea level motion or isopycnal displacements within stratified water column described by Brunt-Vaisala (buoyancy) frequency $N^2 = -\frac{g}{\ib{\rho}_0}\pder[\rho_0]{z}$. Additionally, boundary conditions are imposed on the surface and bottom,
 \begin{align}
 w|_{z = 0} = \pder[\zeta]{t},~p|_{z = 0} = \ib{\rho}_0 g \zeta\\
 w|_{z = -H} = 0
 \end{align}
-Such formulated problem allows separation of vertical axis by employing vertical mode decomposition,
+The both conditions are of linear form since the sea level motions are much smaller than acceleration due to gravity and ocean bottom is flat. Such formulated problem allows separation of vertical axis by employing vertical mode decomposition,
 \begin{align}
 (u, v, p)(x,y,z,t) = \sum_{n = 0} [u_n(x,y,t), v_n(x,y,t), p_n(x,y,t)]\psi_n(z)\\
 w(x,y,z,t) = \sum_{n = 0} [w_n(x,y,t)] \int_{-H}^z \psi_n(z) dz\\
@@ -86,15 +89,20 @@ Upon substitution of the decompositions Sturm-Liouville problem is obtained for 
 \begin{equation}
 \frac{d}{dz}\big( \frac{1}{N^2} \frac{d \psi_n}{dz} \big) + \frac{1}{c^2_n}\psi_n = 0
 \end{equation}
-with $c_n$ being an eigenvalue for a respective $n$-th mode.\\
-The carried out vertical decomposition effectively decouples vertical dynamics from horizontal reducing the initial set to shallow water-type of equations,
+with an eigenvalue for a respective $n$-th mode, $c_n$ is akin to phase speed. Effectively, the carried out decomposition separates vertical motions from horizontal reducing the initial set to Laplace tidal equations,
 \begin{align}
+\label{In:sweq}
+\begin{split}
 \pder[\vec{u}_n]{t} + f \vec{k} \times \vec{u}_n = -\frac{1}{\rho_0} \nabla p_n\\
 \frac{1}{\rho_0} \pder[p_n]{t} + g D_n \nabla  \cdot \vec{u}_n = 0
+\end{split}
 \end{align}
-Here I intentionally introduced equivalent depth $D_n,~c_n = \sqrt{g D_n}$. For typical oceanic conditions $0$-th mode represents a barotropic solution with $\psi_0 = const$, i.e.  vertically uniform dynamics, and $D_0 \simeq H$ (\cite{hendershott1981long}. So it resembles pure surface wave propagation such as tsunami wave propagation. The left out infinite sequence of vertical modes are purely internal modes that cause isopycnal displacements of magnitude, $\eta_n = \int w dt = \int w_n \int_H^z \psi_n dz$ and negligibly small sea level motions. The latter allows complete separation between barotropic and baroclinic (vertically dependent) motions.\\
-For tsunami waves due to their high frequency rotational effects are usually neglected, but can appear over long distances (Kowalik, Sumatra). Internal tides on the other hand are Sverdrup waves which are the same as long shallow water waves but perturbed with rotation causing them to be dispersive.\\
-This set enables to provide a plane wave solution described with
+Here I intentionally introduced equivalent depth $D_n,~c_n = \sqrt{g D_n}$. This states that  \eqref{sweq} describes horizontal propagation of the waves of different mode number (vertical structure) in the ocean having no stratification and depth $D_n$. In actuality, $0$-th mode represents a barotropic solution with vertically uniform dynamics ($\psi_0 = const$) and equivalent depth $D_0 \simeq H$ (\cite{hendershott1981long}). It resembles pure surface wave propagation such as in tsunami wave problem. The left out infinite sequence of vertical modes are purely internal modes that cause isopycnal displacements of magnitude, $\eta_n = \int w dt = \int w_n \int_H^z \psi_n dz$ and under typical oceanic conditions negligibly small sea level motions. The latter allows complete separation between barotropic and baroclinic motions which is similar to imposing rigid lid condition on internal wave modes (\cite{kundu2008fluid}). Since here main interest is in linear wave phenomena, harmonic temporal and spatial behavior can be considered, so that \eqref{In:sweq},
+\begin{align}
+\label{In:helmeq}
+\nabla p_n + (\omega^2) p_n = 0
+\end{align}
+ lead to polarization relations
 \begin{align}
 \label{In:svw}
 \begin{split}
@@ -103,8 +111,12 @@ u_n = \frac{1}{\rho_0} \frac{-\omega k_x + i f k_y}{\omega^2 - f^2} p_n\\
 v_n = \frac{1}{\rho_0} \frac{-\omega k_y - i f k_x}{\omega^2 - f^2} p_n
 \end{split}
 \end{align}
-so that wave associated current is related to pressure by polarization relations.\\
-Now using framework (12-13) energy equation can be formed by multiplying momentum equations with $\vec{u}_n$ and continuity equation with $p_n$ adding both expressions and depth integrating (\cite{nekrasov1990energy}, \cite{kowalik2013oceanography}, \cite{kelly2012cascade}),
+Upon substitution the relations into the continuity equation (12c), a dispersion relation is obtained for Sverdrup waves,
+\begin{equation}
+\omega^2 = f^2 + c^2_n |\vec{k}|^2
+\end{equation}
+In general, the waves are dispersive as a result of rotation. Specifically, mode-1 semidiurnal internal tides are dispersive waves: phase travels with speed of $4~m/s$, but group speed is only about $2~m/s$. Inevitably, their propagation is affected by background oceanic circulation that have same order of current velocities. In contrary, tsunami waves exhibit primarily shallow-water, nondispersive behavior with phase and group speeds are $c_p = c_g \sim O(100~m/s)$ owing to the small periods in comparison to inertial period.\\
+Now using framework (12-13) energy equation can be formed (\cite{nekrasov1990energy}, \cite{kowalik2013oceanography}, \cite{kelly2012cascade}) by multiplying momentum equations with $\vec{u}_n$ and continuity equation with $p_n$ adding both expressions and depth integrating 
 \begin{equation}
 (E_k + E_p)_t + \nabla \cdot \vec{F} = D \label{In:eneq}
 \end{equation}
@@ -112,7 +124,8 @@ Additionally, depth averaging is carried out so that energy flux will be defined
 \begin{equation}
 \vec{F}_n = \frac{1}{H} \vec{u_n}^(t) p_n(t) \int_{-H}^0 \psi^2(z) dz \label{In:fldef}
 \end{equation}
-For tsunami wave propagation due to their barotropic phenomena $\psi(z) = 1$ and $p_n = \rho_0 g \eta$, the energy flux comes to its classical form for surface wave propagation, \cite{kowalik2013oceanography}, $\vec{F} = \rho_0 g \vec{u} \zeta$. I deliberately abandon nonlinearity terms presuming deep ocean propagation. Koko Guoyt depth on average is around 500 m, barotropic velocity is of order $0.1~m/s$, nonlinear terms scale as $\sim u^3$, while linear energy flux as $\sim g u \zeta$. It suggests that only in shallow water where horizontal acceleration is of order of gravity acceleration, nonlinear terms will be a significant addition to total energy transports.\\
+For tsunami wave propagation due to their barotropic nature $\psi(z) = const$ and $p_n = \rho_0 g \eta$, the energy flux comes to its classical form for surface wave propagation  (\cite{henry2001representation}), $\vec{F} = \rho_0 g \vec{u} \zeta$.\\
+I deliberately abandon nonlinear terms presuming deep ocean propagation. Koko Guoyt depth on average is around 500 m, barotropic velocity is of order $0.1~m/s$, nonlinear terms scale as $\sim u^3$, while linear energy flux as $\sim g u \zeta$. It suggests that only in shallow water where horizontal acceleration is of order of gravity acceleration, nonlinear terms will be a significant addition to total energy transports.\\
 In internal tidal studies I additionally carry out period averaging due to harmonic character of waves which is given by Euler formula, $(u,v,p) \sim e^{i \omega t}$, so that (\ref{In:fldef}) becomes
 \begin{align}
 \vec{F}_n = \frac{1}{2} \cj{\vec{u}}_n p_n \int_{-H}^0 \psi^2(z) dz
@@ -144,40 +157,42 @@ In the previous section the normal mode approach was formulated under condition 
 \begin{equation}
 \vec{u} \cdot \nabla h = 0 \label{In:bcnon}
 \end{equation}
-Now the boundary condition clearly states that there is no mass transport across impermeable bottom as wave impinges. Wave itself cannot satisfy (\ref{In:bcnon}), hence, additional motions should arise such that the total mass transport will be zero across the boundary. In the most simplistic configuration when a wall is placed against incident wave train, a specular reflection will occur in order to satisfy (\ref{In:bcnon}). Hence, the reflected wave is ``generated" or this can be restated as an incident wave was scattered into a reflected one. To additionally emphasize this point, here and forth wave scattering is a process of wave generation in order to satisfy of no mass transport across ocean's bottom.\\
-By now considering a step-like discontinuity in ocean depth the so-called matching conditions can be devised (\cite{mei1989theory}) from (\ref{In:bcnon}) and continuity equation for scattering of surface gravity waves,
-\begin{align*}
-\vec{u}_1 h_1 = \vec{u}_2 h_2,~\zeta_1 = \zeta_2
-\end{align*}
-which restates the previous point and additionally emphasizes continuity of sea level. The same approach is also used in studies of internal tide scattering (\cite{larsen1969internal}, \cite{chapman1981scattering}) and internal tide generation problems (\cite{st2002role}). But with a separated condition of no flow through a barrier. In actuality, internal tide production can be viewed as scattering of surface, barotropic tide by steep bottom relief (\cite{hendershott1981long}). Internal tide scattering produce not only change of direction such as for surface waves, but also energy leakage into other vertical modes. MORE ON INTERNAL TIDE SCATTERING Griffith\& Grimshaw.\\
-Of additional note, in rotating ocean the boundary condition has the same form, but physically, due to elliptic particle motions in Sverdrup wave \eqref{In:svw}, a coupling occurs between zonal and meridional current components \cite{greenspan1968theory}.\\
-From energetic point of view as wave scattering occurs portion of the inicident energy is transfered into other wave motions. For tsunami wave this can be characterized by differential scattering cross section (\cite{landau1988hydrodynamics}) defined as an amount of energy emerged in some differential direction $(\theta, \theta + d \theta)$.\\
-In internal tide studies it is of more importance to indentify energy transports from the incident field into other modes (\cite{kurapov2003m}, \cite{kelly2012cascade}. Such that
+Now the boundary condition clearly states that there is no mass transport across impermeable bottom as wave impinges. Wave itself cannot satisfy (\ref{In:bcnon}), hence, additional motions should arise such that the total mass transport will be zero across the boundary. In the most simplistic configuration when a wall is placed against incident wave train in nonrotating ocean, a specular reflection will occur in order to satisfy (\ref{In:bcnon}). Hence, the reflected wave is ``generated" or this can be restated as an incident wave was scattered into a reflected one. To additionally emphasize this point, here and forth wave scattering is a process of wave generation in order to satisfy of no mass transport across ocean's bottom. The generated wave will have different characteristics than the incident wave. The scattered wavefield will both different in its angular distribution and modal content. Hence, for discussion of scattering process it is necessary to introduce follow-up characteristics scattering amplitude or differential scattering cross-section and mode conversion.\\
+Both coefficients are directly related to energetic considerations. Scattering amplitude is simply amplitude of scattered wavefield. And in case of non-rotating flow it can be shown (\cite{morse1946methods}) that the scattering amplitude is
+\begin{align}
+f(\theta, \phi) = \frac{1}{4 \pi} \int e^{-i k_s r_0} (\pder[\phi]{n_0}) d S_0
+\end{align}
+Under approximation of single scattering event (Born approximation) $\phi \sim \phi_i$ so that it states work is done by the incident wave on the scattered field. Or stated as elemental surface is radiating wavefield (\cite{landau1988hydrodynamics}).\\
+For modal conversion phenomena which is of more importance for tidal waves due to their low frequency under hydrostatic approximation can be written as (\cite{griffiths2007internal}, \cite{kelly2012cascade}), 
 \begin{align}
 C_{n}^{bt-bc} = w_{bt} \cdot p_n\\
 C_{mn}^{bc-bc} = (\cj{\vec{u}}_m p_n \int_{-H}^0 \psi_m \nabla \psi_n dz - \cj{\vec{u}}_n p_m \int_{-H}^0 \psi_n \nabla \psi_m dz)
 \end{align}
-In these two expressions it is explicitly made a separation between transfer from baroptropic tide into internal tidal mode $n$. And in the second energy transfer from internal tidal mode-$n$ to mode-$m$.\\
-As scattering occurs, no one can guarantee that incident wave will preserve its form and its energy. So that, for example, a barotropic Sverdrup wave will transfer partially its energy into Kelvin wave (\cite{pinsent1972kelvin}). Or that scattered waves will be free. Trapping of wave energy is a well known phenomena (\cite{longuet1967trapping}, \cite{kowalik2002tidal}).\\
-Since in this work energy approached is considered, it is advisable to formulate scattering problem in terms of wave energetics. Aforementioned, scattered waves are generated from the incident wave field, so there is a direct energy transfer which is controlled by \eqref{In:bcnon}. Let consider a system of reference moving with an incident wave. Than the boundary condition will simply postulate of scattered field generation. This can be transferred into an energetics. The boundary surface will hence doing of work on scattered field. So that emitted energy flux is given by,
-\begin{equation}
-F_{sc} = p_{sc} u_{sc}
-\end{equation}
-It can be shown (\cite{morse1958theoretical})	that it will have angular distribution in far from the scatter, so differential scattering cross-section can thus introduced.\\
-If angular distribution 
- \\
+Both expressions are equivalent but written separately to emphasize the difference. The first formula gives rate of conversion from barotropic tidal wave $w_{bt}$ into baroclinc mode $n$. In the second it is shown how much of energy content in mode $m$ is transferred into mode $n$.  In actuality, internal tide excitation can be viewed as scattering of surface, barotropic tide by steep bottom relief (\cite{hendershott1981long}).\\
+I should explicitly note that during scattering event trapped motions can be generated such as Kelvin waves (\cite{pinsent1972kelvin}), trapped waves (\cite{longuet1967trapping}, \cite{kowalik2002tidal}), edge waves and leaky waves (\cite{leblond1978preface}).\\
+Full three dimensional is difficult to analyze and do not have that much of importance since details of topography is not very well known. So in context of geophysical problems considered since wavelength is much larger than scattering topography is thought mostly in terms of step-like discontinuity. By now considering a step-like discontinuity in ocean depth the so-called matching conditions can be devised (\cite{mei1989theory}) from (\ref{In:bcnon}) and continuity equation for scattering of surface gravity waves.
+\begin{align*}
+\vec{u}_1 h_1 = \vec{u}_2 h_2,~\zeta_1 = \zeta_2
+\end{align*}
+which restates the previous point and additionally emphasizes continuity of sea level. The same approach is also used in studies of internal tide generation (\cite{st2002role}) and scattering (\cite{larsen1969internal}, \cite{chapman1981scattering}). But with a separated condition of no flow through a barrier.\\
+Of additional note, in rotating ocean the boundary condition has the same form, but physically, due to elliptic particle motions in Sverdrup wave \eqref{In:svw}, a coupling occurs between zonal and meridional current components \cite{greenspan1968theory} which leads to some complexity in analytical solution.\\
+Probably Figure should be added...
 
-Generally speaking, wave scattering happens due to inconsistency of boundary conditions. This can be expressed as the following equation.\\
+\subsection{Organization of thesis and research question formulation}
+In overall, this thesis intends to investigate scattering process in three geophysical cases. In order to study this phenomena one will inevitably encounter interference which can lead to impossibility of energy budget estimates. Here I concerned with obtaining characteristics of how much energy was lost and how that energy was distributed in space. So decomposition of interference into elemental waves should be considered.\\
 
-Internal tide generation was ascribed to scattering of barotropic tidal energy from bottom relief.
+\begin{enumerate}
+\item Chapter 1. Method for interference decomposition in numerical experiments on wave scattering.
+In order to quantify things such as directional distribution and reflection coefficient the field should be decomposed in order to obtain energy characteristics.
+
+\item Chapter 2. Scattering of tsunami waves by Koko Guyot.
+\item Chapter 3. Generation, structure and variability of Tasman internal tidal beam.
+\item Chapter 4. Reflection and scattering of the internal tidal beam by Tasman continental slope.
+%\item Chapter 5. Formal solution of scattering problem in framework of coupled Laplace tidal equations.
+\item Discussion, Conclusions, Future Work.
+\end{enumerate}
 
 \newpage
-\section{TO DO}
-\begin{itemize}
-\item In my writing here I need to write down energy conservation equation. It must be done super careful. Ref: Wunsch, Ferrari; Nekrasov; 
-\item Definition of energy flux since it is corner stone for the whole work. Ref: Kowalik papers; Nash, Kelly
-
-\end{itemize}
 
 \bibliographystyle{apacite}
 \bibliography{/home/dmitry/Bibtex_lib/my_first_lib}
