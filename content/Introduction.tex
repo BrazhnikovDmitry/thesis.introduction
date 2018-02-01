@@ -62,9 +62,9 @@ A global internal tide model, satellite altimetry measurements and in situ obser
 \textbf{PLUGIN: 2 TW, 1 TW, Macquarie Ridge, internal tides produce transport of particulates: sediments and can cause strong currents in deep ocean. Role in tidal dissipation, Internal tides what became apparent recently are important energy transporters.}
 }
 \newpage
+
 \subsection{Normal modes in flat-bottom ocean}
-This thesis deals with two types of wave motion: surface and interior. Even though they are different it is possible to formulate a problem of energy scattering in similar fashion. In both cases the waves are predominantly long and hydrostatic, because of their typical wavelengths being larger than the ocean's mean depth. Both tsunami and internal tides have length scales order of 100 km. As well it follows that on time scales of several wave periods nonlinear phenomena can be omitted. Than dynamics of the wave motions in stratified Boussinesq ocean with flat bottom and on a rotating f-plane will take form of (\cite{kundu2008fluid}, \cite{cushman2011introduction}),
-\textit{The set of equations is constructed for linear and hydrostatic flow under Boussinesq approximation. }
+Tsunami and internal tides dealt in this thesis are a case of general inerto-gravity waves. And in both cases the waves are predominantly long since their typical lengthscales are order of 100 km being larger than the ocean's mean depth. Their dynamics can be well described in terms of linear and hydrostatic framework. As first step towards description of scattering phenomena, the wave propagation will be discussed for flat-bottom ocean. Than dynamics of the wave motions in stratified Boussinesq ocean with flat bottom and on a rotating f-plane (\cite{kundu2008fluid}, \cite{cushman2011introduction}) will take mathematical form of,
 \begin{align}
 \pder[u]{t} - f v = -\frac{1}{\ib{\rho}_0}\pder[p]{x}\\
 \pder[v]{t} + f u = -\frac{1}{\ib{\rho}_0}\pder[p]{y}\\
@@ -72,12 +72,12 @@ This thesis deals with two types of wave motion: surface and interior. Even thou
 N^2 w = -\frac{1}{\ib{\rho}_0} \pderr[p]{z}{t}\\
 \pder[u]{x} + \pder[v]{y} + \pder[w]{z} = 0
 \end{align}
-with $(u,~v,~w)$ being velocity along zonal, meridional and vertical axis, $f$ - constant Coriolis parameter, $p$ - perturbation pressure (departure) arising either from sea level motion or isopycnal displacements within stratified water column described by Brunt-Vaisala (buoyancy) frequency $N^2 = -\frac{g}{\ib{\rho}_0}\pder[\rho_0]{z}$. Additionally, boundary conditions are imposed on the surface and bottom,
+with $(u,~v,~w)$ being velocity along zonal, meridional and vertical axis, $f$ - Coriolis parameter, $p$ - perturbation pressure arising either from sea level oscillations or isopycnal displacements within stratified water column described by Brunt-Vaisala frequency $N^2 = -\frac{g}{\ib{\rho}_0}\pder[\rho_0]{z}$. Additionally, boundary conditions are imposed on the surface and bottom,
 \begin{align}
 w|_{z = 0} = \pder[\zeta]{t},~p|_{z = 0} = \ib{\rho}_0 g \zeta\\
 w|_{z = -H} = 0
 \end{align}
-The both conditions are of linear form since the sea level motions are much smaller than acceleration due to gravity and ocean bottom is flat. Such formulated problem allows separation of vertical axis by employing vertical mode decomposition,
+The both conditions are of linear form since the sea level motions are much smaller than acceleration due to gravity and \textit{ocean bottom is flat}. Such formulated problem allows separation of vertical axis by employing vertical mode decomposition,
 \begin{align}
 (u, v, p)(x,y,z,t) = \sum_{n = 0} [u_n(x,y,t), v_n(x,y,t), p_n(x,y,t)]\psi_n(z)\\
 w(x,y,z,t) = \sum_{n = 0} [w_n(x,y,t)] \int_{-H}^z \psi_n(z) dz\\
@@ -88,7 +88,7 @@ Upon substitution of the decompositions Sturm-Liouville problem is obtained for 
 \begin{equation}
 \frac{d}{dz}\big( \frac{1}{N^2} \frac{d \psi_n}{dz} \big) + \frac{1}{c^2_n}\psi_n = 0
 \end{equation}
-with an eigenvalue for a respective $n$-th mode, $c_n$ is akin to phase speed. Effectively, the carried out decomposition separates vertical motions from horizontal reducing the initial set to Laplace tidal equations,
+with an eigenvalue for a respective $n$-th vertical mode given by $c_n$ that is akin to phase speed. The carried out decomposition separates vertical motions from horizontal reducing the initial set to Laplace tidal equations,
 \begin{align}
 \label{In:sweq}
 \begin{split}
@@ -96,12 +96,13 @@ with an eigenvalue for a respective $n$-th mode, $c_n$ is akin to phase speed. E
 \frac{1}{\rho_0} \pder[p_n]{t} + g D_n \nabla  \cdot \vec{u}_n = 0
 \end{split}
 \end{align}
-Here I intentionally introduced equivalent depth $D_n,~c_n = \sqrt{g D_n}$. This states that  \eqref{sweq} describes horizontal propagation of the waves of different mode number (vertical structure) in the ocean having no stratification and depth $D_n$. In actuality, $0$-th mode represents a barotropic solution with vertically uniform dynamics ($\psi_0 = const$) and equivalent depth $D_0 \simeq H$ (\cite{hendershott1981long}). It resembles pure surface wave propagation such as in tsunami wave problem. The left out infinite sequence of vertical modes are purely internal modes that cause isopycnal displacements of magnitude, $\eta_n = \int w dt = \int w_n \int_H^z \psi_n dz$ and under typical oceanic conditions negligibly small sea level motions. The latter allows complete separation between barotropic and baroclinic motions which is similar to imposing rigid lid condition on internal wave modes (\cite{kundu2008fluid}). Since here main interest is in linear wave phenomena, harmonic temporal and spatial behavior can be considered, so that \eqref{In:sweq},
+Here I intentionally introduced equivalent depth $D_n$ such that $c_n = \sqrt{g D_n}$. This states dynamical equivalence between barotropic (surface) wave and baroclinic (internal) waves if the ocean stratification was absent and depth was $D_n$. In actuality, $0$-th mode represents a barotropic solution with vertically uniform dynamics ($\psi_0 = const$) and equivalent depth $D_0 \simeq H$ (\cite{hendershott1981long}). This mode resembles pure surface wave propagation such as tsunami wave problem. The infinite sequence of higher vertical modes are purely internal modes that produce negligible sea level perturbations. This allows complete separation between barotropic and baroclinic motions which is similar to imposing rigid lid condition on internal modes (\cite{kundu2008fluid}).\\
+Here the main interest is in linear wave phenomena, so harmonic temporal behavior $e^{i \omega t}$ will be implied leading to Helmholtz equation,
 \begin{align}
 \label{In:helmeq}
-\nabla p_n + (\omega^2) p_n = 0
+(\omega^2 - f^2) p_n + c_n^2 \Delta p_n = 0
 \end{align}
- lead to polarization relations
+----------------------
 \begin{align}
 \label{In:svw}
 \begin{split}
