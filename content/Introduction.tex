@@ -228,7 +228,7 @@ quantitative aspects are discussed in \textbf{Section 3}.\\
 The wave scattering in the ocean can be defined in the same manner as for sound waves 
 \citep{Lighthill2001}. The scattered component are said to be a difference between two wave fields:
 \begin{itemize}
-	\item the disturbed field when the inhomogeneity (such as topography) is present;
+	\item the disturbed field when the inhomogeneity such as topography is present;
 	\item the field when the inhomogeneity is absent, so that it is described by the incident wave 
 	only.
 \end{itemize}
@@ -239,7 +239,7 @@ The difference arises solely because of the full bottom boundary condition,
 \end{equation}
 The condition states that there is no mass transport across an impermeable bottom. The wave motion 
 cannot alone satisfy (\ref{In:bcnon}), and a compensating flow has to develop to preserve mass. For 
-the configuration when an incident wave train encounters a vertical wall in a nonrotating ocean, a 
+instance, when an incident wave train encounters a vertical wall in a nonrotating ocean, a 
 specular reflection occurs in order to fulfill the no-flow condition.\\
 An additional condition is imposed on scattered waves such that the energy vanishes with distance 
 \citep{mei1989theory, morse1946methods, olbers1981formal}. The Sommerfeld radiation condition leads 
@@ -249,54 +249,58 @@ to a far-field asymptotic on a horizontal plane:
 p_{scat} \sim \frac{e^{i \vec{k} \cdot \vec{x}}}{|\vec{x}|} \Phi_s (\theta)
 \end{equation}
 This is an assertion for circularly spreading waves having some angular distribution $\Phi_s$, 
-called a scattering amplitude. The squared quantity will furnish amount of scattered radiation.\\
+called a scattering amplitude.\\
 In the near-field, a scattered wave field can be decomposed by Fourier transform whereby each 
 wavenumber can be regarded as a separate component. As it propagates away, it will begin to 
 separate from others. Magnitude modulations due to interference \footnote{more appropriate to say 
 diffraction} will subdue. And at large distances, respective Fourier coefficient will represent a 
 scattering amplitude in direction corresponding to the wave vector. As a result, Fourier transform 
-depicts the far-field's distribution of energy.\footnote{ This is a fundamental idea in acoustic 
-holography \citep{williams1999fourier}, should I cite other fields?.}
+depicts the far-field's distribution of energy.\\
+This comprises the general idea behind scattering phenomena. Since in this work two types of 
+wave motions are dealt with, an additional comments that are specific to each type follows.
 
 \subsection{Tsunami wave scattering}
-Since tsunami is a typical long, barotropic wave the full nonlinear boundary condition can be 
-reevaluated as leading to mass conservation. Thence, when tsunami encounters topography, local 
-convergence of the flow will cause local back-scatter. This will be observed as radially spreading 
-waves.  
-In tsunami studies primary interest in the shape of scattered amplitude...  At the same time there 
-is a portion trapped on top (LH, 
-conical 
-island) which is slowly leaks away or dissipated. For far-field signals this does not have much 
-value. In tsunami problem additional problem exists because of multiple scattering is possible 
-since there are a lot of seamounts. In previous studies, the scattered was identified based on 
-definition (kowalik, koshimura). 
-For the problem of tsunami-topography interaction, far-field signals could be approximated with the 
-above distributions;\\
-This will usually consist of a step discontinuity connecting the deep 
-ocean with the top of seamount (e.g. Koko Guyot) or the continental shelf. Then the boundary 
-condition \eqref{In:bcnon} is analogous to fulfilling so-called matching conditions 
-\citep{mei1989theory}. These are mass conservation and continuity of sea level for surface waves
+Since tsunamis are typical long, barotropic waves, the full nonlinear boundary condition can be 
+incorporated into \eqref{In:swe.cont} to produce
+\begin{equation}
+\pder[\eta]{t} + \nabla  \cdot (H \vec{u}) = 0 
+\end{equation}
+When a tsunami encounters a topography, a flow convergence due to a sloping bottom will 
+cause localized reflection and reorientation of the motion. As a result,the topography will emit 
+radially spreading waves. And the disturbed field will have an angular distribution distinct from 
+the initial wave. Then the scattering amplitude will constitute a primary characteristic in the 
+tsunami-topography interaction \footnote{\citep{vastano1973transient, saito2009scattering}}.\\
+Because of tsunami's transient nature, the interaction will also transfer energy into trapped 
+motions \citep{longuet1967trapping, tinti1995tsunami}. They usually thought as standing 
+waves\footnote{ or ``sloshing modes"} associated with a topography's shape or as edge waves 
+confined to a slope. Such transient trapped waves do significantly contribute to local 
+oscillations as slowly re-emitted energy leaks into the open ocean, but in the far-field this will 
+not have appreciable effect.\\
+For long waves it is usually possible to omit a topography variation by considering it to be a 
+depth discontinuity. Then a seamount, such as Koko Guyot, will be analogous to a cylinder. An error 
+of such representation decreases as $O(k^2 H^2)$ \citep{mei1989theory}, for typical mean ocean 
+depth's of 4000 m and wave periods longer than 10 minutes, the above simplification is valid. In 
+this case, nonlinear problem of \eqref{In:bcnon} is similar to fulfilling so-called matching 
+conditions. These are mass conservation and continuity of sea level
 \begin{align}
 \vec{u}_1 h_1 = \vec{u}_2 h_2,~\zeta_1 = \zeta_2
 \end{align}
 
 \subsection{Internal tide scattering}
- while in internal tide reflection problem, large distances away (when 
- continental slope becomes a point) an angularly integrated scattered amplitude will be directly 
- related to a reflection coefficient, though wave spreading with distance has to be factored in.\\
-In addition to angular scattering, there could occur a transfer of energy into different vertical 
-modes. Let us consider a long wave that obeys Laplace tidal equations entering a region where 
-bottom slope is inclined and the full boundary condition \eqref{In:bcnon} has to be satisfied. It 
-only can be fulfilled if there is a vertical velocity. A normal mode by itself is not able to 
-represent the dynamics since the vertical derivative, by definition, is zero on the boundary. 
-However, a superposition of modes can force horizontal convergence to cancel out the vertical 
-velocity. Physically, pressure gradients should develop by displacing isopycnal surfaces which 
-further radiate energy away in the form of baroclinic modes. In general, this describes a 
-coupled-mode approach \citep{griffiths2007internal}. Locally-flat normal modes counteract one 
-another through the boundary condition. The spatial gradients will dictate mode's magnitude to 
-equilibrate the balance. Dynamically, Laplace tidal equation for each separate mode will embrace an 
-additional force represented as intermodal-coupling term \citep{griffiths2007internal, 
-kelly2016coupled}.\\
+In the internal tide problem, in addition to the spatial energy redistribution, there could occur a 
+transfer of energy into different vertical modes which is usually termed scattering in internal 
+tide literature \citep[e.g.][]{muller1992scattering}. Let us consider a long wave that obeys 
+Laplace tidal equations entering a region where bottom slope is inclined and the full boundary 
+condition \eqref{In:bcnon} has to be satisfied. It only can be fulfilled if there is a vertical 
+velocity. A normal mode by itself is not able to represent the dynamics since the vertical 
+derivative, by definition, is zero on the boundary. However, a superposition of modes can force 
+horizontal convergence to cancel out the vertical velocity. Physically, pressure gradients should 
+develop by displacing isopycnal surfaces which further radiate energy away in the form of 
+baroclinic modes. In general, this describes a coupled-mode approach \citep{griffiths2007internal}. 
+Locally-flat normal modes counteract one another through the boundary condition. The spatial 
+gradients will dictate mode's magnitude to ensure a balance. Dynamically, Laplace tidal equation 
+for each separate mode will embrace an additional force represented as an intermodal-coupling term 
+\citep{griffiths2007internal, kelly2016coupled}.\\
 The intermodal conversion and energy flux carried by modes can be estimated as work done by 
 vertical velocity against modal pressure, $W_{m \to n} \sim (w_{m,~scat}~p_n)|_{z = 
 -h} = -((\vec{u}_m \cdot \nabla h) p_n)|_{z = -h}$. But total conversion must as well account for 
@@ -306,9 +310,9 @@ the opposite energy transfer, from $n$ to $m$, hence,
 C_{m \to n} = -((\vec{u}_m \cdot \nabla h)~p_n)|_{z = -h} + ((\vec{u}_n \cdot \nabla h)~p_m)|_{z = 
 -h}
 \end{align}
-Internal tide excitation can be viewed as scattering of barotropic tide by steep relief 
-\citep{hendershott1981long}. If the surface tide is the $0^{th}$ mode, then energy lost can be 
-diagnosed as
+Internal tide excitation can be viewed as scattering of barotropic tide by steep relief into higher 
+(baroclinic) modes \citep{hendershott1981long}. If the surface tide is the $0^{th}$ mode, then 
+energy lost can be diagnosed as
 \begin{align}
 \label{In:bt_bc}
 C_{bt \to bc} = -(\vec{u}_{bt} \cdot \nabla h)~\sum_{n = 1} p_n|_{z = -h}
@@ -319,6 +323,7 @@ assuming that the baroclinic wave field effect on surface tide is negligible
 For consideration of mode-1 scattering it is useful to reformulate \eqref{In:en.trans} by employing 
 Leibniz's rule, the continuity equation per each normal mode, and mode's orthogonality,
 \begin{align}
+\label{In:bc_bc}
 C_{m \to n} = \int_{-h}^{0} (u_m \nabla p_n - u_n \nabla p_m) dz
 \end{align}
 In the problem of internal wave propagation over uniform and gently inclined bottom 
@@ -331,28 +336,49 @@ internal wave rays described by
 \label{In:ch.angle}
 \gamma = \frac{dz}{dx} = \pm \frac{\omega^2 - f^2}{N^2 - \omega^2}
 \end{equation}
-Slope criticality can be defined as ratio between its inclination and rays angle, $\gamma$. In 
-subcritical regime of forward propagation, the ratio is less than unity. In this case for steeper 
-bottom more higher modes is necessary to describe internal tide dynamics (Figure 2). Now it is 
-apparent that a mode conversion will not happen, unless there is a change in topography to drive 
-adjustment of mode amplitudes. On contrary, in supercritical regime, when $\nabla h > \gamma$, 
-internal waves are reflected with always present generation of higher modes. Usually, they will be 
-phase-locked into vertically propagating rays \citep{garrett2007internal, 
+Slope criticality can be defined as ratio between bottom gradient and rays angle, $\gamma$. In 
+the subcritical regime of forward propagation, the ratio is less than unity. In this regime a 
+more inclined bottom requires a greater number of modes to describe internal tide dynamics (Figure 
+2). Now it is apparent that a mode conversion will not happen, unless there is a change in 
+topography to drive adjustment of mode amplitudes. In contrast, in the supercritical regime, when 
+$\nabla h > \gamma$, internal waves are always reflected with increase of higher mode contribution. 
+Usually, they will be phase-locked into vertically propagating rays \citep{garrett2007internal, 
 lamb2014internal} subject to breaking and dissipation \citep{lien2001observations, 
 nash2004internal, klymak2011breaking}. In case of the continental slope this causes internal tide 
 mode-1 reflection to decrease relative to the equivalent case of surface wave reflection.\\
-As a first approximation for long waves scattering, it will be instructive to consider a problem 
-with simplified geometry. In the case of internal tides - continuity of pressure and no-flow 
-through vertical walls 
-\citep{st2002role, larsen1969internal, chapman1981scattering}, the conditions are
+A similar to the tsunami problem simplification can be made by representing a topography as a depth 
+jump \citep{st2002role, larsen1969internal, chapman1981scattering}. \footnote{Should I mention no 
+justification?} Now the matching conditions will require continuity of pressure across the 
+jump and no momentum transport through vertical walls:
 \begin{align}
 p_1 = p_2, -h_2 \leq z \leq 0 \\
 \vec{u}_1 = 0, -h_1 \leq z \leq -h_2\\
 \vec{u}_1 = \vec{u}_2, -h_2 \leq z \leq 0
 \end{align}
 
-\section{Organization of thesis}
-The thesis consists of the following three chapters:
+\section{Organization of dissertation and Novelty of investigation}
+The thesis consists of the following three chapters. In each part a wave-topography interaction is 
+addressed for distinct geophysical settings. To clarify terminology and outline 
+
+To clarify terminology, the following table 1.1 provides an overview of the topics addressed in the 
+chapters.\\
+\begin{table}
+\begin{tabular}[c]{ |p{2cm}||p{5cm}|p{5cm}|p{5cm}|  }
+\hline
+~ & Chapter 1 & Chapter 2 & Chapter 3\\
+\hline
+Topic & Tsunami wave & Generation of internal tide & Reflection of internal tide\\
+Definition of Scattering & Angular redistribution of wave energy & Conversion of barotropic tide 
+into baroclinic tide & Conversion of the gravest baroclinic mode into higher modes\\ 
+Scattering diagnostic & \eqref{In:def.scamp} & \eqref{In:bt_bc} & \eqref{In:def.scamp} \& 
+\eqref{In:bc_bc}\\
+Area & Koko Guoyt, Emperor Seamount Chain & Macquarie Ridge, New Zealand & Tasmania Continental 
+Slope\\
+\hline
+\end{tabular}\\
+\caption{Overview of the dissertation}
+\end{table}
+	
 \begin{enumerate}
 	\item[Chapter 1] makes its goal analysis of scattering of tsunami waves by Koko Guyot. The 
 	approach is based on obtaining scattering amplitude \eqref{In:def.scamp}, evaluation of its 
@@ -385,7 +411,7 @@ given in Appendix A.
 \begin{figure}
 	\includegraphics[scale=0.8]{/home/dmitry/Work/Research/thesis/FINALE/INTRODUCTION/figures/errors2.pdf}
 	\caption{Error in description of internal wave structure by flat-bottom vertical modes as 
-	bottom gets steeper.}
+	bottom gets steeper \citep{wunsch1968propagation}.}
 	%\includegraphics[scale=0.5]{../}
 \end{figure}
 %In overall, this thesis intends to investigate scattering process in three geophysical cases. In order to study this phenomena one will inevitably encounter interference which can lead to impossibility of direct energy budget estimates. Here I concerned with obtaining characteristics of how much energy was lost and how that energy was distributed in space. So decomposition of interference into elemental waves should be considered.\\
