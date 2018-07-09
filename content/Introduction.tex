@@ -35,31 +35,31 @@
 \newpage
 \section{Introduction}
 Oceanic gravity waves fundamentally contribute to the redistribution of mechanical energy in the 
-world ocean. The wave transmission can be altered as a result of interaction with large scale 
+world ocean. Wave propagation can be altered as a result of interaction with large-scale 
 sea bottom features such as submarine mountains, trenches and continental slopes. This 
-redistributes energy, causes wave reflection or might transform wave structure. In this work, by 
-means of numerical simulations, these processes are examined for tsunamis and internal waves of 
-tidal frequency (internal tides) for realistic cases of their interaction with ocean's bottom 
-relief.\\
+modifies energy pathways by causing wave reflections or transformation of wave structure. In this 
+work, by means of numerical simulations, these processes are examined for tsunamis and internal 
+waves of tidal frequency (internal tides) for realistic cases of their interaction with ocean's 
+bottom relief.\\
 Tsunamis are transient waves that are impulsively forced by submarine earthquakes. The waves 
 traverse vast expanses of the oceans and encounter numerous sea bottom features 
 \citep{mofjeld2001tsunami}. In each instance, scattering redirects portion of incident energy. This 
 process in case of the Hawaiian-Emperor seamount chain and Hess Rise leads to highly variable 
 spatio-temporal tsunami impact on coastal regions \citep{kowalik2008kuril, tang2012direct}. First, 
-this is characterized by wave trains arriving in irregular sequence. The largest waves can 
-unexpectedly appear with a several hour delay after the initial arrival 
+this is characterized by wave trains arriving in an irregular sequence. The largest waves can 
+unexpectedly appear with a several hour delay after an initial arrival 
 \citep{koshimura2008effect}. At second, the overall wave intensity can markedly change along 
-shoreline \citep{Borrero2013}. The problem is investigated in the Chapter 1. Scattering by Koko 
-Guyot, the largest submarine seamount in the Emperor chain (Figure 1), is studied in order to 
-quantify for the observed far-field signals in two recent tsunami events: the 2006 Kuril and 2011 
-Tohoku-oki tsunamis.\\
-The second problem considered in this dissertation explores internal waves that pervade ocean's 
+shorelines \citep{Borrero2013}. The problem of scattering by Koko Guyot, the largest submarine 
+seamount in the Emperor chain (Figure 1), is investigated in the Chapter 1. The study intends to
+quantify the interaction and the observed far-field signals in two recent tsunami events: the 2006 
+Kuril and 2011 Tohoku-oki tsunamis.\\
+The second problem considered in this dissertation explores internal waves that pervade the ocean's 
 interior. Their existence depends upon water column stratification since these waves manifest as an 
 oscillatory motion of isopycnal surfaces. The initial perturbation can be forced by different 
 mechanisms: wind stress \citep{garrett2001near}, buoyancy flux \citep{garrett1979internal}, ice 
 ridge keels \citep{morison1986internal} or even tsunami \citep{santek2007satellite}. Additionally, 
 tidal currents at steep topography can excite internal waves. These are baroclinic waves 
-that oscillate with tidal and are called internal or baroclinic tides.\\
+that oscillate with tidal frequency and are called internal or baroclinic tides.\\
 One reason to study baroclinic tides is their role in the dissipation of barotropic (surface) tidal 
 energy \citep{munk1997once}. Current estimates suggest that 1/3 of total tidal energy is 
 converted into internal motions in the deep ocean \citep{egbert2000significant}. From this roughly 
@@ -75,19 +75,19 @@ local processes such as water mass transformation \citep{stigebrandt1989vertical
 nutrient fluxes \citep{sharples2007spring}, sediment \citep{hotchkiss1982internal} and larvae 
 transports \citep{pineda1999circulation}. All of the above is crucially dependent on an efficiency 
 of energy removal in the process of internal-tide generation, propagation and scattering. 
-And the respective parameterization is in a premature state to have a practical use.\\
+At this point, respective parameterizations are in a premature state to have prognostic value.\\
 In the setting of the Tasman Sea, an internal tidal beam originates at Macquarie Ridge and impinges 
 on the continental slope of Tasmania (Figure 1). The Tidal Dissipation Experiment (TTIDE) had its 
-goal to provide description of the internal tide reflection and involved energy lost. This means to 
-quantify amount of wave energy being reflected back into open sea, converted into higher vertical 
-modes and consequently, describe processes associated with sink of energy. These are the problems 
-addressed in Chapters 2 and 3.\\
+goal to quantify the internal tide reflection and associated energy lost. This involves estimation 
+of wave energy being reflected back into the open sea, converted into higher vertical modes and 
+consequently, describe processes associated with sink of energy. These are the problems addressed 
+in Chapters 2 and 3.\\
 The two geophysical problems examined in the dissertation represent wave scattering by 
-inhomogeneity in propagation media. Here, it takes form of rapid change in ocean depth imposing 
-constrains on fluid motion. The accompanying transfers are intrinsically linked to energy flux 
-approach. This is reviewed in \textbf{Section 2} of the Introduction by considering a normal mode 
-dynamics, while \textbf{Section 3} describes energy characteristics associated with wave 
-transformations caused by interaction with bathymetry.\\
+inhomogeneity in propagation media. Here, it takes form of a rapid bathymetric change
+imposing constrains on fluid motions. Accompanying transformations are intrinsically linked to 
+an energy flux approach. This is reviewed in \textbf{Section 2} of the Introduction by considering 
+a normal mode dynamics, while \textbf{Section 3} describes energy characteristics associated with 
+wave transformations caused by the interaction with bathymetry.\\
 
 %physically based mixing parametrization
 
@@ -118,10 +118,10 @@ is discussed. The equations of motion in stratified, Boussinesq ocean on an f-pl
 	\end{align}
 \end{subequations}
 where $(u,~v,~w)$ are velocity along zonal, meridional and vertical axis, $f$ is the Coriolis 
-parameter, $p$ - perturbation pressure arising either from sea level oscillations or isopycnal 
+parameter, $p$ is the perturbation pressure arising either from sea level oscillations or isopycnal 
 displacements within stratified water column measured by Brunt-Vaisala frequency $N^2 = 
 -\frac{g}{\ib{\rho}_0}\pder[\rho_0]{z}$. Additionally, boundary conditions are imposed on the 
-surface and bottom,
+surface and bottom as
 \begin{align}
 w|_{z = 0} = \pder[\zeta]{t},~p|_{z = 0} = \ib{\rho}_0 g \zeta\\
 w|_{z = -H} = 0\label{In:bc.swe}
@@ -155,15 +155,15 @@ decomposition separates vertical motions from horizontal dynamics reducing the i
 \end{align}
 \end{subequations}
 This reveals the dynamical equivalence between barotropic, surface wave and baroclinic, internal 
-waves if the ocean stratification were absent and the depth was $D_n$. In actuality, $0$-th mode 
-represents a barotropic solution with vertically uniform dynamics ($\psi_0 = const$) 
+waves if the ocean stratification were absent and the depth was $D_n$. In actuality, the $0$-th 
+mode represents a barotropic solution with vertically uniform dynamics ($\psi_0 = const$) 
 and the depth $D_0 \simeq H$ \citep{hendershott1981long}. The gravest mode represents pure surface 
 wave propagation such as in the tsunami wave problem. The infinite sequence of higher vertical 
 modes are internal modes that produce increasingly negligible sea level perturbations. This allows 
 complete separation between barotropic and baroclinic motions which is similar to imposing rigid 
 lid condition on internal modes \citep{kundu2008fluid}.\\
 The main interest is in linear wave phenomena, so harmonic temporal behavior, $e^{i \omega t}$ 
-will be implied leading to the Helmholtz equation,
+will be imposed leading to the Helmholtz equation,
 \begin{align}
 \label{In:helmeq}
 (\omega^2 - f^2) p_n + c_n^2 \Delta p_n = 0
@@ -185,36 +185,38 @@ The waves are dispersive as a result of Earth's rotation, with phase and group s
 c_{p} = (1 - \frac{f^2}{\omega^2})^{-1/2} c_n,~c_g = (1 - \frac{f^2}{\omega^2})^{1/2} c_n,~c_p c_g 
 = c_n^2
 \end{align}
-For the most energetic mode-1 semidiurnal internal tide and typical ocean conditions phase travels 
-with speed of $4~m/s$, but group speed is only $2~m/s$. So slow traveling wave is potentially 
-affected by background oceanic circulation. On contrary, tsunami waves exhibit shallow-water, 
-nondispersive behavior with phase and group speeds of $\sim O(100~m/s)$ owing to small periods in 
-comparison to inertial period. Tsunami waves cross ocean basins in a matter of hours without any 
-appreciable interaction with ocean's dynamical state.\\
+For temperate ocean stratification and deep ocean propagation, the most energetic mode-1 
+semidiurnal internal tide phase travels with speed of $4~m/s$, but group speed is only $2~m/s$. So 
+slow traveling wave is potentially affected by background oceanic circulation. On contrary, tsunami 
+waves exhibit shallow-water, nondispersive behavior with phase and group speeds of $\sim 
+O(100~m/s)$ owing to small periods in comparison to the Earth's rotation period. Tsunami waves 
+cross ocean basins in a matter of hours without any appreciable interaction with ocean's dynamical 
+state.\\
 In the deep ocean, where the bottom topography does not demonstrate large spatial gradients, normal 
 modes are useful to describe wave dynamics. An energy equation can be developed from 
 \eqref{In:sweq}. Multiplying the momentum equations by $\vec{u}_n$ and the continuity equation by 
-$p_n$, adding both expressions and depth integrating one obtains
+$p_n$, after adding both expressions and depth averaging one obtains the energy conservation law 
+per each mode $n$,
 \begin{equation}
 (E_k + E_p)_t + \nabla \cdot \vec{F} = 0 \label{In:eneq}
 \end{equation}
-Additionally, depth averaging is carried out so that energy flux will be defined,
+The horizontal energy flux is defined by
 \begin{equation}
 \vec{F}_n = \frac{1}{H} \vec{u}_n(t) p_n(t) \int_{-H}^0 \psi^2(z) dz \label{In:fldef}
 \end{equation}
-For tsunami wave propagation due to their barotropic nature $\psi(z) = const$ and $p_n = \rho_0 g 
+For tsunami wave propagation due to barotropic nature $\psi(z) = const$ and $p_n = \rho_0 g 
 \eta$, the expression takes its classical form for surface wave propagation 
 \citep{henry2001representation}, $\vec{F} = \rho_0 g \vec{u} \zeta$.\\
 In internal tide studies period averaging further simplifies calculations,
 \begin{align}
 \vec{F}_n = \frac{1}{2H} \cj{\vec{u}}_n p_n \int_{-H}^0 \psi^2(z) dz
 \end{align}
-where velocity and baroclinic pressure are now complex amplitudes of harmonic fit and $\cj{}$ is a 
-complex conjugate.\\
-The obtained expressions for energy flux comprises only the pressure-work term, i.e. transport of 
-energy is dictated by pressure forces. In full formulation this is augmented with nonlinear 
+where velocity and baroclinic pressure are now complex amplitudes of a harmonic fit and $\cj{}$ is 
+a complex conjugate.\\
+The obtained expressions for the energy flux comprises only the pressure-work term, i.e. transport 
+of energy is dictated by pressure forces. In the full formulation this is augmented with nonlinear 
 contributions made by advection and dissipative forces \citep{gill2016atmosphere}. These terms 
-are negligible presuming deep ocean propagation where the wave's spatial dimensions are large and 
+are negligible presuming deep ocean propagation where wave's spatial dimensions are large and 
 magnitude of dynamical variables is small.\\
 %\citep{kang2012energetics}, \citep{nash2012unpredictable}
 Away from scattering regions, an energy budget can be constructed following the linearized normal 
@@ -225,11 +227,12 @@ reflected components and intermodal conversion are the main topic of investigati
 quantitative aspects are discussed in \textbf{Section 3}.\\
 
 \section{Oceanic wave scattering}
-The wave scattering in the ocean can be defined in the same manner as for sound waves 
-\citep{Lighthill2001}. The scattered component are said to be a difference between two wave fields:
+Wave scattering in the ocean can be defined the same as for sound waves \citep{Lighthill2001}. The 
+scattered component is said to be the difference between two wave fields:
 \begin{itemize}
-	\item the disturbed field when the inhomogeneity such as topography is present;
-	\item the field when the inhomogeneity is absent, so that it is described by the incident wave 
+	\item the disturbed field when an inhomogeneity such as a change of underlying topography is 
+	present and affects an incident wave;
+	\item the field when the inhomogeneity is absent, so that it is given by the incident wave 
 	only.
 \end{itemize}
 The difference arises solely because of the full bottom boundary condition,
@@ -237,11 +240,11 @@ The difference arises solely because of the full bottom boundary condition,
 ( \vec{u} \cdot \nabla h )|_{z = -h(x, y)} = 0~\text{or}~w = - \vec{u}_h \cdot \nabla h 
 \label{In:bcnon} 
 \end{equation}
-The condition states that there is no mass transport across an impermeable bottom. The wave motion 
-cannot alone satisfy (\ref{In:bcnon}), and a compensating flow has to develop to preserve mass. For 
-instance, when an incident wave train encounters a vertical wall in a nonrotating ocean, a 
-specular reflection occurs in order to fulfill the no-flow condition.\\
-An additional condition is imposed on scattered waves such that the energy vanishes with distance 
+The condition states that there is no mass transport across an impermeable bottom. Incident wave 
+motions cannot alone satisfy (\ref{In:bcnon}), and a compensating flow has to develop to preserve 
+mass. For instance, when a wave train encounters a vertical wall in a nonrotating ocean, 
+a specular reflection occurs in order to fulfill the no-flow condition.\\
+An additional condition is imposed on scattered waves such that their energy vanishes with distance 
 \citep{mei1989theory, morse1946methods, olbers1981formal}. The Sommerfeld radiation condition leads 
 to a far-field asymptotic on a horizontal plane:
 \begin{equation}
@@ -256,8 +259,8 @@ separate from others. Magnitude modulations due to interference \footnote{more a
 diffraction} will subdue. And at large distances, respective Fourier coefficient will represent a 
 scattering amplitude in direction corresponding to the wave vector. As a result, Fourier transform 
 depicts the far-field's distribution of energy.\\
-This comprises the general idea behind scattering phenomena. Since in this work two types of 
-wave motions are dealt with, an additional comments that are specific to each type follows.
+These are the general concepts of scattering phenomena. Since in this work two types of 
+wave oscillations are dealt with, additional, specific comments follow.
 
 \subsection{Tsunami wave scattering}
 Since tsunamis are typical long, barotropic waves, the full nonlinear boundary condition can be 
@@ -265,22 +268,23 @@ incorporated into \eqref{In:swe.cont} to produce
 \begin{equation}
 \pder[\eta]{t} + \nabla  \cdot (H \vec{u}) = 0 
 \end{equation}
-When a tsunami encounters a topography, a flow convergence due to a sloping bottom will 
-cause localized reflection and reorientation of the motion. As a result,the topography will emit 
+When a tsunami encounters a topographic feature, a flow convergence due to the sloping bottom will 
+cause localized reflection and reorientation of the motion. As a result, the topography will emit 
 radially spreading waves. And the disturbed field will have an angular distribution distinct from 
-the initial wave. Then the scattering amplitude will constitute a primary characteristic in the 
+the initial wave. Then the scattering amplitude will be a primary characteristic in the 
 tsunami-topography interaction \footnote{\citep{vastano1973transient, saito2009scattering}}.\\
 Because of tsunami's transient nature, the interaction will also transfer energy into trapped 
 motions \citep{longuet1967trapping, tinti1995tsunami}. They usually thought as standing 
-waves\footnote{ or ``sloshing modes"} associated with a topography's shape or as edge waves 
-confined to a slope. Such transient trapped waves do significantly contribute to local 
+waves\footnote{ or ``sloshing modes"} associated with the topography's shape or as edge waves 
+confined to the slope. Such transient trapped waves do significantly contribute to local 
 oscillations as slowly re-emitted energy leaks into the open ocean, but in the far-field this will 
 not have appreciable effect.\\
-For long waves it is usually possible to omit a topography variation by considering it to be a 
-depth discontinuity. Then a seamount, such as Koko Guyot, will be analogous to a cylinder. An error 
-of such representation decreases as $O(k^2 H^2)$ \citep{mei1989theory}, for typical mean ocean 
+For long wave scattering it is usually possible to simplify discussion by omitting some topographic 
+variations such as an exact slope profile. It is then considered to be a depth discontinuity. So 
+that, a seamount, such as Koko Guyot, will be analogous to a cylinder. An error in wave dynamics of 
+such representation decreases as $O(k^2 H^2)$ \citep{mei1989theory}, for the typical mean ocean 
 depth's of 4000 m and wave periods longer than 10 minutes, the above simplification is valid. In 
-this case, nonlinear problem of \eqref{In:bcnon} is similar to fulfilling so-called matching 
+this case, the nonlinear problem of \eqref{In:bcnon} is similar to fulfilling so-called matching 
 conditions. These are mass conservation and continuity of sea level
 \begin{align}
 \vec{u}_1 h_1 = \vec{u}_2 h_2,~\zeta_1 = \zeta_2
@@ -288,20 +292,20 @@ conditions. These are mass conservation and continuity of sea level
 
 \subsection{Internal tide scattering}
 In the internal tide problem, in addition to the spatial energy redistribution, there could occur a 
-transfer of energy into different vertical modes which is usually termed scattering in internal 
-tide literature \citep[e.g.][]{muller1992scattering}. Let us consider a long wave that obeys 
-Laplace tidal equations entering a region where bottom slope is inclined and the full boundary 
-condition \eqref{In:bcnon} has to be satisfied. It only can be fulfilled if there is a vertical 
-velocity. A normal mode by itself is not able to represent the dynamics since the vertical 
+transfer of energy into different vertical modes. This process is usually referred to as scattering 
+in internal tide studies \citep[e.g.][]{muller1992scattering}. Let us consider a long wave that 
+obeys Laplace tidal equations entering a region where bottom slope is inclined and the full 
+boundary condition \eqref{In:bcnon} has to be satisfied. It only can be fulfilled if there is a 
+vertical velocity. A normal mode by itself is not able to represent the dynamics since the vertical 
 derivative, by definition, is zero on the boundary. However, a superposition of modes can force 
 horizontal convergence to cancel out the vertical velocity. Physically, pressure gradients should 
 develop by displacing isopycnal surfaces which further radiate energy away in the form of 
 baroclinic modes. In general, this describes a coupled-mode approach \citep{griffiths2007internal}. 
 Locally-flat normal modes counteract one another through the boundary condition. The spatial 
-gradients will dictate mode's magnitude to ensure a balance. Dynamically, Laplace tidal equation 
-for each separate mode will embrace an additional force represented as an intermodal-coupling term 
-\citep{griffiths2007internal, kelly2016coupled}.\\
-The intermodal conversion and energy flux carried by modes can be estimated as work done by 
+gradients will dictate mode's magnitude to ensure a balance. Dynamically, the Laplace tidal 
+equations for each separate mode will embrace an additional force represented as an 
+intermodal-coupling term \citep{griffiths2007internal, kelly2016coupled}.\\
+Intermodal conversion and energy flux carried by modes can be estimated as work done by 
 vertical velocity against modal pressure, $W_{m \to n} \sim (w_{m,~scat}~p_n)|_{z = 
 -h} = -((\vec{u}_m \cdot \nabla h) p_n)|_{z = -h}$. But total conversion must as well account for 
 the opposite energy transfer, from $n$ to $m$, hence,
@@ -310,9 +314,9 @@ the opposite energy transfer, from $n$ to $m$, hence,
 C_{m \to n} = -((\vec{u}_m \cdot \nabla h)~p_n)|_{z = -h} + ((\vec{u}_n \cdot \nabla h)~p_m)|_{z = 
 -h}
 \end{align}
-Internal tide excitation can be viewed as scattering of barotropic tide by steep relief into higher 
-(baroclinic) modes \citep{hendershott1981long}. If the surface tide is the $0^{th}$ mode, then 
-energy lost can be diagnosed as
+Internal tide excitation can be viewed as scattering of barotropic tide by a steep relief into 
+higher (baroclinic) modes \citep{hendershott1981long}. If the surface tide is the $0^{th}$ mode, 
+then energy lost can be diagnosed as
 \begin{align}
 \label{In:bt_bc}
 C_{bt \to bc} = -(\vec{u}_{bt} \cdot \nabla h)~\sum_{n = 1} p_n|_{z = -h}
@@ -336,20 +340,20 @@ internal wave rays described by
 \label{In:ch.angle}
 \gamma = \frac{dz}{dx} = \pm \frac{\omega^2 - f^2}{N^2 - \omega^2}
 \end{equation}
-Slope criticality can be defined as ratio between bottom gradient and rays angle, $\gamma$. In 
-the subcritical regime of forward propagation, the ratio is less than unity. In this regime a 
-more inclined bottom requires a greater number of modes to describe internal tide dynamics (Figure 
-2). Now it is apparent that a mode conversion will not happen, unless there is a change in 
-topography to drive adjustment of mode amplitudes. In contrast, in the supercritical regime, when 
+Slope criticality can be defined as the ratio of bottom gradient to rays angle, $\gamma$. In the 
+subcritical regime of forward propagation, the ratio is less than unity. In this regime a more 
+inclined bottom requires a greater number of modes to describe internal tide dynamics (Figure 
+2). Now it is apparent that mode conversion will not happen, unless there is a change in the 
+inclination to drive adjustment of mode amplitudes. In contrast, in the supercritical regime, when 
 $\nabla h > \gamma$, internal waves are always reflected with increase of higher mode contribution. 
 Usually, they will be phase-locked into vertically propagating rays \citep{garrett2007internal, 
 lamb2014internal} subject to breaking and dissipation \citep{lien2001observations, 
-nash2004internal, klymak2011breaking}. In case of the continental slope this causes internal tide 
+nash2004internal, klymak2011breaking}. In case of a continental slope this causes internal tide 
 mode-1 reflection to decrease relative to the equivalent case of surface wave reflection.\\
-A similar to the tsunami problem simplification can be made by representing a topography as a depth 
-jump \citep{st2002role, larsen1969internal, chapman1981scattering}. \footnote{Should I mention no 
-justification?} Now the matching conditions will require continuity of pressure across the 
-jump and no momentum transport through vertical walls:
+A similar to the tsunami problem simplification can be made by representing a topographic variation 
+as a depth jump \citep{st2002role, larsen1969internal, chapman1981scattering}. \footnote{Should I 
+mention no justification?} Now the matching conditions will require continuity of pressure across 
+the jump and no momentum transport through vertical walls:
 \begin{align}
 p_1 = p_2, -h_2 \leq z \leq 0 \\
 \vec{u}_1 = 0, -h_1 \leq z \leq -h_2\\
@@ -357,25 +361,29 @@ p_1 = p_2, -h_2 \leq z \leq 0 \\
 \end{align}
 
 \section{Organization of dissertation and Novelty of investigation}
-The thesis consists of the following three chapters. In each part a wave-topography interaction is 
-addressed for distinct geophysical settings. To clarify terminology and outline 
+The thesis consists of three chapters. In each part wave-topography interaction is addressed for  
+distinct geophysical settings. To summarize the topics and clarify terminology following table is 
+given, as well necessary points are made in words.
 
-To clarify terminology, the following table 1.1 provides an overview of the topics addressed in the 
-chapters.\\
 \begin{table}
-\begin{tabular}[c]{ |p{2cm}||p{5cm}|p{5cm}|p{5cm}|  }
-\hline
-~ & Chapter 1 & Chapter 2 & Chapter 3\\
-\hline
-Topic & Tsunami wave & Generation of internal tide & Reflection of internal tide\\
-Definition of Scattering & Angular redistribution of wave energy & Conversion of barotropic tide 
-into baroclinic tide & Conversion of the gravest baroclinic mode into higher modes\\ 
-Scattering diagnostic & \eqref{In:def.scamp} & \eqref{In:bt_bc} & \eqref{In:def.scamp} \& 
-\eqref{In:bc_bc}\\
-Area & Koko Guoyt, Emperor Seamount Chain & Macquarie Ridge, New Zealand & Tasmania Continental 
-Slope\\
-\hline
-\end{tabular}\\
+	\centering
+	\begin{tabular}{ |M{3.5cm}|M{4.5cm}|M{4.5cm}|M{4.5cm}|  }
+	\hline
+	~ & Chapter 1 & Chapter 2 & Chapter 3\\
+	\hline
+	Topic & Tsunami propagation & Generation of an internal tidal wave & Reflection of a mode-1 
+	internal tide\\
+	\hline
+	Scattering phenomena & Angular redistribution of wave energy & Conversion of barotropic tide 
+	into baroclinic tide & Conversion of the gravest baroclinic mode into higher modes\\ 
+	\hline
+	Scattering diagnostic & \eqref{In:def.scamp} & \eqref{In:bt_bc} & \eqref{In:def.scamp} \& 
+	\eqref{In:bc_bc}\\
+	\hline
+	Area & Koko Guoyt, Emperor Seamount Chain & Macquarie Ridge, New Zealand & Tasmania Continental 
+	Slope\\
+	\hline
+	\end{tabular}\\
 \caption{Overview of the dissertation}
 \end{table}
 	
